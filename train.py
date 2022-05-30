@@ -55,8 +55,8 @@ def main():
     args.workers = 4
     args.seed = time.time()
     args.print_freq = 30
-    args.train_json = '../building_train.json'
-    args.test_json = '../building_test.json'
+    args.train_json = 'building_train.json'
+    args.test_json = 'building_test.json'
     with open(args.train_json, 'r') as outfile:
         train_list = json.load(outfile)
     with open(args.test_json, 'r') as outfile:
@@ -228,4 +228,4 @@ class AverageMeter(object):
 
 
 if __name__ == '__main__':
-    main()        
+    main()

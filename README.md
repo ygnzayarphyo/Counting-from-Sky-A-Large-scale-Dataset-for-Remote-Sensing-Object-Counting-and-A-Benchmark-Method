@@ -78,4 +78,10 @@ If you find the ASPDNet useful, please cite our paper. Thank you!
   organization={IEEE}  
 }
 
+// Create conda environment
+conda create -n env_count_from_sky python=3.6
+conda activate env_count_from_sky
 
+// Solved errors
+AssertionError: Torch not compiled with CUDA enabled
+Solution: conda install -c pytorch torchvision cudatoolkit=10.1 pytorch
